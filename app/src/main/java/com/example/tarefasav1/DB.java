@@ -27,11 +27,12 @@ public class DB {
     }
 
 
-    public long delTarefa(String descricao) {
+    public long delTarefa(Tarefa tarefa) {
         SQLiteDatabase db = helper.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put("descricao", descricao);
 
-        return db.insert("tarefas", null, values);
+
+        return db.delete("tarefas","id = " + tarefa.getId() , null);
+
     }
 }

@@ -1,10 +1,10 @@
 package com.example.tarefasav1;
-public class tarefa {
+public class Tarefa {
     private long id;
     private String descricao;
 
 
-    public tarefa(long id, String descricao) {
+    public Tarefa(long id, String descricao) {
         this.id = id;
         this.descricao = descricao;
 
