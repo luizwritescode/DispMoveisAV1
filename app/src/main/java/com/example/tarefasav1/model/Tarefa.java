@@ -1,4 +1,4 @@
-package com.example.tarefasav1;
+package com.example.tarefasav1.model;
 public class Tarefa {
     private long id;
     private String descricao;
@@ -7,7 +7,6 @@ public class Tarefa {
     public Tarefa(long id, String descricao) {
         this.id = id;
         this.descricao = descricao;
-
     }
 
     public long getId() {

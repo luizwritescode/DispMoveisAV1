@@ -1,14 +1,17 @@
-package com.example.tarefasav1;
+package com.example.tarefasav1.dao;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-public class DB {
+import com.example.tarefasav1.helper.helperDB;
+import com.example.tarefasav1.model.Tarefa;
+
+public class Database {
     private helperDB helper;
 
-    public DB(Context context) {
+    public Database(Context context) {
         helper = new helperDB(context);
     }
 
@@ -31,8 +34,15 @@ public class DB {
         SQLiteDatabase db = helper.getWritableDatabase();
         ContentValues values = new ContentValues();
 
-
         return db.delete("tarefas","id = " + tarefa.getId() , null);
+
+    }
+
+    public long deleteAll() {
+        SQLiteDatabase db = helper.getWritableDatabase();
+        ContentValues values = new ContentValues();
+
+        return db.delete("tarefas",null, null);
 
     }
 }

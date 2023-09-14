@@ -1,4 +1,4 @@
-package com.example.tarefasav1;
+package com.example.tarefasav1.helper;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -14,8 +14,7 @@ public class helperDB extends SQLiteOpenHelper {
 
         @Override
         public void onCreate(SQLiteDatabase db) {
-            String createTableQuery = "CREATE TABLE tarefas (id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                    "descricao TEXT)";
+            String createTableQuery = "CREATE TABLE tarefas (id INTEGER PRIMARY KEY AUTOINCREMENT, descricao TEXT)";
             db.execSQL(createTableQuery);
         }
 
