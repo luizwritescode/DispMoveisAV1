@@ -1,10 +1,13 @@
-package com.example.tarefasav1;
+package com.example.tarefasav1.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.tarefasav1.R;
+
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
