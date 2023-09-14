@@ -14,10 +14,12 @@ import com.example.tarefasav1.R;
 
 import java.util.ArrayList;
 
+//codigo adaptado do geeks for geeks
+//https://www.geeksforgeeks.org/how-to-update-recyclerview-adapter-data-in-android/
 public class RCAdapter extends RecyclerView.Adapter<RCAdapter.ViewHolder> {
     private ArrayList<String> tarefaArrayList;
 
-    public RCAdapter(ArrayList<String> tarefaArrayList, Context context) {
+    public RCAdapter(ArrayList<String> tarefaArrayList) {
         this.tarefaArrayList = tarefaArrayList;
     }
     @NonNull

@@ -14,27 +14,27 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addTarefaBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/tarefaAddBtn" />
 
     <EditText
         android:id="@+id/tarefaEditText"
-        android:layout_width="323dp"
-        android:layout_height="54dp"
+        android:layout_width="286dp"
+        android:layout_height="46dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="text"
         android:text="Tarefa"
         app:layout_constraintBottom_toTopOf="@+id/tarefasRecyclerView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/addTarefaBtn"
-        android:layout_width="57dp"
-        android:layout_height="60dp"
+        android:id="@+id/tarefaAddBtn"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -42,7 +42,7 @@
         android:text="+"
         app:layout_constraintBottom_toTopOf="@+id/tarefasRecyclerView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toEndOf="@+id/tarefaEditText"
         app:layout_constraintTop_toTopOf="parent" />
 
