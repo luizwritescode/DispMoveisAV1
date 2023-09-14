@@ -1,11 +1,12 @@
+package com.example.tarefasav1;
 public class tarefa {
     private long id;
-    private String title;
+    private String descricao;
 
 
-    public tarefa(long id, String title, String description, long timestamp) {
+    public tarefa(long id, String descricao) {
         this.id = id;
-        this.title = title;
+        this.descricao = descricao;
 
     }
 
@@ -13,8 +14,8 @@ public class tarefa {
         return id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getDesc() {
+        return descricao;
     }
 
 
